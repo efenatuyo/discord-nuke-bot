@@ -29,12 +29,15 @@ The Discord Nuke Bot comes with a variety of commands that allow you to control 
 ### Screenshots
 
 Leaderboard:
+
 ![Screenshot of the leaderboard command](https://media.discordapp.net/attachments/1058161953257824346/1059543612179873893/image.png)
 
 Tracker:
+
 ![Screenshot of the Tracker event](https://media.discordapp.net/attachments/1058161953257824346/1059543983124131871/image.png)
 
 Stats:
+
 ![Screenshot of the Stats command](https://media.discordapp.net/attachments/1058161953257824346/1059544207544565881/image.png)
 
 ### Support
