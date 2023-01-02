@@ -5,6 +5,7 @@ Welcome to the Discord Nuke Bot project! This bot allows users to "nuke" their D
 The Discord Nuke Bot comes with a variety of commands that allow you to control and customize your nuking experience. Here is a list of all the available commands:
 
 `ban`: This command bans every user from the server. This is typically used as a part of the nuke process, but can also be used on its own if you want to temporarily remove all users from the server.
+
 `help`: The help command displays a list of all the available commands and a brief description of what each one does.
 `leaderboard`: The leaderboard command displays a list of the top users on the server based on their nuke count. This can be a fun way to see who is the most active nuker on the server.
 `login`: The login command saves your Discord bot token, which is required for the bot to function. You can obtain your bot token by creating a Discord bot and getting the token from the Discord Developer Portal.
