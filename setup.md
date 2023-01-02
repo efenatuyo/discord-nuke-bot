@@ -12,8 +12,13 @@ To begin using the Discord Nuke Bot, you will need to upload the code to a host 
 
 #### [bot]
 `token`: Create a new discord bot using the [Discord Developer Portal](https://discord.com/developers/applications)
+
 `bot_id`: Press on your discord bot using the [Discord Developer Portal](https://discord.com/developers/applications) and copy the client id
+
 `channel_name`: The name of the channels that get spam created
+
 `role_name`: The name of the roles that get spam created
+
 `webhook_name`: The name of the webhooks that get spam created
+
 `nuke_message``: The content of the messages that get spammed
