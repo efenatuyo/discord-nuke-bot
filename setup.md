@@ -9,5 +9,5 @@ We encourage you to take the time to read through this file in its entirety befo
 To begin using the Discord Nuke Bot, you will need to upload the code to a host or install it on your computer.
 
 ### Setting config.ini
-   # [bot]
+   #### [bot]
      - test
