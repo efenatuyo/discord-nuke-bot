@@ -27,7 +27,7 @@ The Discord Nuke Bot comes with a variety of commands that allow you to control 
 `type`: The type command allows you to turn the auto_nuke feature on or off. When auto_nuke is on, the bot will automatically nuke the server at a specified interval. This can be useful if you want to have a constantly nuking server for fun, but be warned that it can also be very disruptive.
 
 ### Support
-If you need help using this bot or have any questions, you can join the [server]((https://discord.gg/n2xfSuf7p8) and ask for assistance. You can also create an issue on this GitHub repository and we will do our best to help you out.
+If you need help using this bot or have any questions, you can join the [server](https://discord.gg/n2xfSuf7p8) and ask for assistance. You can also create an issue on this GitHub repository and we will do our best to help you out.
 
 ### License
 This project is licensed under the terms of the CC-BY-SA-4.0 license. This means that you are free to use, modify, and distribute the code as long as you give proper credit to the original creators. If you use this project in your own work, please make sure to include a link back to this repository and mention the original authors. Failure to do so may result in the project being taken down. We want to make sure that everyone who uses this project is able to do so legally and ethically.
