@@ -21,4 +21,4 @@ To begin using the Discord Nuke Bot, you will need to upload the code to a host 
 
 `webhook_name`: The name of the webhooks that get spam created
 
-`nuke_message``: The content of the messages that get spammed
+`nuke_message`: The content of the messages that get spammed
