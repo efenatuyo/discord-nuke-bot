@@ -1,5 +1,7 @@
 ## Discord Nuke Bot
-Welcome to the Discord Nuke Bot project! This bot allows users to "nuke" their Discord servers, which essentially means to delete all channels and roles, ban all users, and then restore the server to its previous state. Please note that this bot is for entertainment purposes only and should not be used to actually harm any Discord servers. Use at your own risk.
+Welcome to the Discord Nuke Bot project! This bot was created specifically for the Community Nuker Server, a fun and lighthearted Discord server where users can nuke their own servers for entertainment purposes. Everything in this project is made with love, so if you enjoy using it, we would appreciate a star on GitHub!
+
+This bot allows users to "nuke" their Discord servers, which essentially means to delete all channels and roles, ban all users, and then restore the server to its previous state. Please note that this bot is for entertainment purposes only and should not be used to actually harm any Discord servers. Use at your own risk.
 
 ### Commands
 The Discord Nuke Bot comes with a variety of commands that allow you to control and customize your nuking experience. Here is a list of all the available commands:
