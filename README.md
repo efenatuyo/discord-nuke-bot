@@ -3,6 +3,10 @@ Welcome to the Discord Nuke Bot project! This bot was created specifically for t
 
 This bot allows users to "nuke" their Discord servers, which essentially means to delete all channels and roles, ban all users, and then restore the server to its previous state. Please note that this bot is for entertainment purposes only and should not be used to actually harm any Discord servers. Use at your own risk.
 
+### Antiratelimit
+
+This bot uses a token bucket system to bypass Discord rate limits. When a command is received, the bot checks to see if there are enough tokens available in the bucket to process the request. If there are, it removes a token and processes the command. If there are not enough tokens available, the request is denied until more tokens are added to the bucket. This helps to prevent the bot from overloading the Discord server and ensures that all users have a fair chance to use the bot.
+
 ### Commands
 The Discord Nuke Bot comes with a variety of commands that allow you to control and customize your nuking experience. Here is a list of all the available commands:
 
