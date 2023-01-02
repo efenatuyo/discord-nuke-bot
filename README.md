@@ -28,7 +28,7 @@ The Discord Nuke Bot comes with a variety of commands that allow you to control 
 
 ### Screenshots
 
-![Screenshot of the leaderboard command]([https://i.imgur.com/xYzAbCd.png](https://media.discordapp.net/attachments/1058161953257824346/1059543612179873893/image.png))
+![Screenshot of the leaderboard command](https://media.discordapp.net/attachments/1058161953257824346/1059543612179873893/image.png)
 
 ### Support
 If you need help using this bot or have any questions, you can join the [server](https://discord.gg/n2xfSuf7p8) and ask for assistance. You can also create an issue on this GitHub repository and we will do our best to help you out.
