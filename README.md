@@ -44,6 +44,10 @@ Stats:
 
 ![Screenshot of the Stats command](https://media.discordapp.net/attachments/1058161953257824346/1059544207544565881/image.png)
 
+### Setup
+
+please follow the introductions over this [file](https://github.com/efenatuyo/discord-nuke-bot/blob/main/setup.md)
+
 ### Support
 If you need help using this bot or have any questions, you can join the [server](https://discord.gg/n2xfSuf7p8) and ask for assistance. You can also create an issue on this GitHub repository and we will do our best to help you out.
 
