@@ -692,7 +692,7 @@ async def type(ctx, arg=None):
 
 @bot.command(name="fix")
 async def fix(ctx):
- if ctx.author.id in owners:
+ if str(ctx.author.id) in owners:
   for guild in bot.guilds:
     if guild.id != your_server:
      await guild.leave()
